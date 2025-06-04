@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PsiCare - Descrição</title>
+  <link rel="website icon" href="../Imagens/Logo-PsiCare.png">
+  <link rel="stylesheet" href="../style1.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>PsiCare</h1>
+      <div class="data"><span id="data-hoje"></span></div>
+    </div>
+
+    <div class="humor-section">
+      <p>Como está seu humor hoje?</p>
+      <span class="humor-option">😢</span>
+      <span class="humor-option">😟</span>
+      <span class="humor-option">😐</span>
+      <span class="humor-option">🙂</span>
+      <span class="humor-option">😁</span>
+    </div>
+
+    <textarea id="descricao" placeholder="Descreva aqui como você se sente hoje..."></textarea>
+
+    <div class="buttons">
+      <button class="limpar" onclick="limpar()">Limpar</button>
+      <button class="salvar" onclick="salvar()">Salvar</button>
+    </div>
+
+    <div class="footer">
+      <img src="https://img.icons8.com/ios-filled/50/settings.png" alt="Configurações"/>
+      <img src="https://img.icons8.com/ios-filled/50/technical-support.png" alt="Suporte Técnico"/>
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>
