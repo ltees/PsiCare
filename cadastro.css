@@ -1,0 +1,73 @@
+.cadastro-container {
+  background-color: #fce8de;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  border-radius: 30px;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.Logo-PsiCare {
+  width: 100px;
+  position: relative;
+  top: 20px;
+  right: 70px;
+}
+
+.titulo h1 {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.titulo h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.formCadastro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-control {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  background-color: #e8d5cc;
+  color: #444;
+}
+
+.form-control::placeholder {
+  color: #88796f;
+}
+
+.botao-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.BotaoVerde {
+  background-color: #4b9466;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #3a7b54;
+  transition: background-color 0.3s ease;
+}
+
+.BotaoVerde:hover {
+  background-color: #3a7b54;
+}
