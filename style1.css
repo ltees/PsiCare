@@ -10,11 +10,22 @@ body {
 }
 
 .container {
-  background-color: #fffaf2;
+  background-color: #fce8de;
   border-radius: 30px;
   padding: 25px;
   width: 350px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.Logo-PsiCare {
+  width: 100px;
+  position: relative;
+  top: 20px;
+  right: 10px;
+}
+
+.h1Historico{
+  width: 1000px;
 }
 
 .header {
@@ -24,7 +35,7 @@ body {
 
 .header h1 {
   margin: 0;
-  font-size: 32px;
+  font-size: 70px;
 }
 
 .header .data {
@@ -124,7 +135,7 @@ textarea {
 
 .retornar {
   display: block;
-  width: 100%;
+  width: 90%;
   margin-top: 30px;
   padding: 10px;
   font-size: 16px;
@@ -134,4 +145,18 @@ textarea {
   color: white;
   text-align: center;
   text-decoration: none;
+}
+
+.sair{
+  display: block;
+  width: 90%;
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #a02121;
+  color: white;
+  text-align: center;
+  text-decoration: none
 }
