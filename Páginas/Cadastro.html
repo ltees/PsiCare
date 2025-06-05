@@ -28,11 +28,49 @@
         <input type="password" class="form-control" placeholder="Confirme sua senha:">
       </div>
       <div class="botao-container">
-        <button type="submit" class="BotaoVerde">
-            <a href="./descricao.html">Registrar</a>
-        </button>
+        <button type="submit" class="BotaoVerde">Registrar</button>
       </div>
     </form>
   </div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    const inputs = form.querySelectorAll(".form-control");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const nome = inputs[0].value.trim();
+      const email = inputs[1].value.trim();
+      const senha = inputs[2].value;
+      const confirmarSenha = inputs[3].value;
+
+      if (!nome || !email || !senha || !confirmarSenha) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert("E-mail inválido.");
+        return;
+      }
+
+      if (senha.length < 6) {
+        alert("A senha deve ter pelo menos 6 caracteres.");
+        return;
+      }
+
+      if (senha !== confirmarSenha) {
+        alert("As senhas não coincidem.");
+        return;
+      }
+
+      window.location.href = "./descricao.html";
+    });
+  });
+</script>
+
 </body>
 </html>
