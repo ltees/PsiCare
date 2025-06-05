@@ -49,5 +49,5 @@ function salvar() {
   };
 
   localStorage.setItem("registroPsiCare", JSON.stringify(registro));
-  window.location.href = "psicare_registros.html";
+  window.location.href = "./historico.html";
 }
