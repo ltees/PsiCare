@@ -26,11 +26,32 @@
         <input type="password" class="form-control" placeholder="Senha:">
       </div>
       <div class="botao-container">
-        <button type="submit" class="BotaoVerde">
-            <a href="./descricao.html">Registrar</a>
-        </button>
+        <button type="submit" class="BotaoVerde">Entrar</button>
       </div>
     </form>
   </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('form');
+    const inputs = document.querySelectorAll('.form-control');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault(); 
+
+      const email = inputs[0].value.trim();
+      const senha = inputs[1].value;
+
+      if (!email || !senha) {
+        alert('Por favor, preencha todos os campos.');
+        return;
+      }
+
+      alert('Login realizado com sucesso!');
+      window.location.href = './descricao.html';
+    });
+  });
+</script>
+
 </body>
 </html>
