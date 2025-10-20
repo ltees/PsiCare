@@ -67,9 +67,11 @@ textarea {
   height: 100px;
   border-radius: 10px;
   border: 1px solid #ccc;
+  padding: 10px;
   resize: none;
-  background-color: #e0cec5;
-  margin-bottom: 15px;
+  font-size: 14px;
+  background-color: #fce8de;
+  margin-bottom: 10px;
 }
 
 .buttons {
